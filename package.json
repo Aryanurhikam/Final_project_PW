@@ -1,0 +1,24 @@
+{
+  "name": "uts_pw_fix",
+  "version": "1.0.0",
+  "description": "NOTTE INSONNE RESTORAN ITALIA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryanurhikam/Final_project_PW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aryanurhikam/Final_project_PW/issues"
+  },
+  "homepage": "https://github.com/Aryanurhikam/Final_project_PW#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
