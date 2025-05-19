@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header style="background-color: #21bf73; color: white; padding: 1.5rem 0;">
+        <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;">
+
+            <!-- Logo dan Judul -->
+            <div style="display: flex; align-items: center;">
+                <img src="assets/logo.jpeg" alt="Logo" style="height: 40px; margin-right: 0.75rem;">
+                <h1 style="margin: 0; font-family: 'Georgia', serif; font-weight: bold; font-size: xx-large;">NOTTE
+                    INSONNE</h1>
+            </div>
+
+            <!-- Navigasi -->
+            <nav>
+                <a href="#home"
+                    style="color: white; font-weight: bold; margin-right: 1.5rem; text-decoration: none;">Beranda</a>
+                <a href="#menu"
+                    style="color: white; font-weight: bold; margin-right: 1.5rem; text-decoration: none;">Menu</a>
+                <a href="#tentangkami" style="color: white; font-weight: bold; text-decoration: none;">Tentang Kami</a>
+            </nav>
+        </div>
+    </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto p-6 flex flex-col lg:flex-row gap-6">
+
+    <!-- Left Section -->
+    <section class="flex-1 flex flex-col gap-6">
+
+      <!-- Page Title -->
+      <h2 class="text-xl font-bold">DINE-IN</h2>
+
+      <!-- Customer Info -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-gray-800 mb-4">INFORMASI PELANGGAN</h3>
+        <form class="space-y-4 text-sm">
+          <div>
+            <label class="block mb-1 font-medium">Nama <span class="text-red-500">*</span></label>
+            <input type="text" placeholder="Masukkan nama" class="w-full border-b border-gray-300 focus:outline-none focus:border-gray-700 pb-1" />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Nomor HP</label>
+            <div class="flex items-center gap-2">
+              <span class="text-gray-500">+62</span>
+              <input type="tel" placeholder="Masukkan nomor hp" class="w-full border-b border-gray-300 focus:outline-none focus:border-gray-700 pb-1" />
+            </div>
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Jumlah Pelanggan</label>
+            <input
+     type="number"
+    min="1"
+    placeholder="Contoh: 3 orang"
+    class="w-full border-b border-gray-300 focus:outline-none focus:border-gray-700 pb-1"
+  />
+</div>
+        </form>
+      </div>
+      <!-- Order List -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h4 class="font-semibold text-gray-800 mb-4">DAFTAR PESANAN</h4>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="assets/frescobaldi_wine.jpg" alt="Frescobaldi Pomino Wine" class="w-12 h-12 rounded" />
+            <div>
+              <p class="text-gray-800 text-sm">Frescobaldi Pomino Wine</p>
+              <button class="text-blue-500 text-xs">Edit</button>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button class="text-[#21bf73] text-xl">−</button>
+            <span>1</span>
+            <button class="text-[#21bf73] text-xl">＋</button>
+          </div>
+          <span class="text-gray-700 text-sm">689.000</span>
+        </div>
+        <div class="mt-4 text-xs text-red-500">
+          • Beli lebih banyak untuk mendapatkan DISKON BESAR. <a href="#" class="underline">Keterangan lebih lanjut</a>
+        </div>
+        <div class="mt-2">
+          <button class="text-[#21bf73] border border-[#21bf73] px-3 py-1 rounded-full text-sm hover:bg-emerald-50">Add More</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Right Section: Payment -->
+    <aside class="w-full lg:w-1/3 bg-white p-4 rounded-lg shadow h-fit">
+      <h4 class="font-semibold text-gray-800 mb-4">DETAIL PEMBAYARAN</h4>
+
+      <div class="mb-4">
+        <label class="text-sm text-gray-700 font-bold block mb-1">KODE UNIK: ch4jl</label>
+      </div>
+
+      <div class="text-sm text-gray-700 space-y-1">
+        <div class="flex justify-between">
+          <span>Harga Tanpa Pajak</span><span>Rp689.000</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Pajak Restoran (10%)</span><span>Rp68.900</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Rounding</span><span>Rp100</span>
+        </div>
+        <hr class="my-2" />
+        <div class="flex justify-between font-semibold text-black text-lg">
+          <span>Total</span><span>Rp758.000</span>
+        </div>
+      </div>
+
+      <button class="mt-4 w-full bg-[#21bf73] text-white py-2 rounded-full hover:bg-emerald-700 font-semibold transition">
+        Pesan Sekarang!
+      </button>
+    </aside>
+  </main>
+</body>
+</html>
